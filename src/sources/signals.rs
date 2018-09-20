@@ -1,6 +1,6 @@
 //! Event source for tracking Unix signals
 //!
-//! Only available on `#[cfg(unix)]`.
+//! Only available on `#[cfg(target_os = "linux")]`.
 //!
 //! This allows you to track  and receive Unix signals through the event loop
 //! rather than by registering signal handlers. It uses `signalfd` under the hood.

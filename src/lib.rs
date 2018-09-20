@@ -81,7 +81,7 @@
 
 pub extern crate mio;
 extern crate mio_extras;
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 extern crate nix;
 
 pub use self::loop_logic::{EventLoop, LoopHandle, LoopSignal};

@@ -19,7 +19,7 @@ mio-extras = "2.0"
 [dev-dependencies]
 lazycell = "=1.0.0"
 
-[target.'cfg(unix)'.dependencies]
+[target.'cfg(target_os = "linux")'.dependencies]
 nix = "0.11"
 
 [[test]]
